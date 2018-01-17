@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 以布局的左侧为参照物，从屏幕的右侧100%移动到0处（屏幕以外移至屏幕可见区域from...to）  duration:移动的速度，毫秒-->
+	<translate android:fromXDelta="100%p" android:toXDelta="0"
+		android:duration="300" />
+</set>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.mplayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.android.mplayer.MainPlayerActivity"
+             android:theme="@style/SampleTheme.BottomDrawer"
+            android:label="@string/app_name" 
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             <intent-filter>
+                <action android:name="com.android.mplayer.activity.MainPlayerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.android.mplayer.MusicListActivity"
+            android:theme="@style/Theme.ListPageIndicator" 
+            android:launchMode="singleInstance">
+        </activity>
+        
+         <activity
+            android:name="com.android.mplayer.AlbumArtistBroswerActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:launchMode="singleInstance">
+        </activity>
+        
+         <activity
+            android:name="com.android.mplayer.CurrentPlayListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" 
+            android:launchMode="singleInstance">
+        </activity>
+        
+         
+         <service android:name="com.android.mplayer.service.MusicPlayService">
+             <intent-filter>
+                 <action android:name="service.MusicPlayService"/>                 
+             </intent-filter>
+         </service>
+         
+    </application>
+
+</manifest>

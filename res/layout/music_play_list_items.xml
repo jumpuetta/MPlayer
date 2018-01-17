@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_item_height"
+    android:layout_gravity="center_vertical" >
+
+
+    <TextView
+        android:id="@+id/listview_item_playlist_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:maxLength="29"
+        android:paddingLeft="@dimen/listview_items_padding_left_top"
+        android:paddingRight="@dimen/listview_items_padding_right"
+        android:paddingTop="12dp"
+        android:singleLine="true"
+        android:textSize="24sp" />
+    
+    <TextView 
+        android:id="@+id/listview_item_playlist_position"
+        android:visibility="invisible"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        />
+
+    <include layout="@layout/music_song_list_items_menu" />
+
+    <ImageView
+        android:id="@+id/peak_two"
+        style="@style/PeakMeter"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/listview_peak_meter_two_padding_right"
+        android:paddingTop="@dimen/peak_meter_padding_top" />
+
+    <ImageView
+        android:id="@+id/peak_one"
+        style="@style/PeakMeter"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/listview_peak_meter_one_padding_right"
+        android:paddingTop="@dimen/peak_meter_padding_top" />
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/listview_item_artist_art"
+        android:layout_width="@dimen/gridview_image_width"
+        android:layout_height="@dimen/gridview_image_height"
+        android:layout_margin="@dimen/gridview_item_margin"
+        android:scaleType="centerCrop" />
+     
+    <LinearLayout
+		android:id="@+id/gridview_outershell"
+        android:layout_width="@dimen/gridview_image_width"
+        android:layout_height="@dimen/gridview_item_ccontainer_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/gridview_item_margin">
+  		       
+		<View
+		    android:id="@+id/gridview_text_border"
+		    style="@style/Topborderline"
+		    />
+		<RelativeLayout
+	        android:id="@+id/gridview_info_holder"
+	        android:layout_width="@dimen/gridview_image_width"
+	        android:layout_height="60dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/transparent_black"
+	        android:gravity="center_vertical"
+	        android:orientation="vertical"
+		    android:paddingLeft="@dimen/gridview_item_ccontainer_padding_left"
+        	android:paddingRight="@dimen/gridview_item_ccontainer_padding_right" 
+		    >
+	        <TextView
+	            android:id="@+id/listview_item_artist_name"
+	            android:textSize="20sp"
+	            style="@style/GridviewShadowedText" />
+	
+	        <TextView 
+	            android:id="@+id/listview_item_artist_id" 
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

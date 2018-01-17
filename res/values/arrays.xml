@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="menu_options_title_array">
+		<item>@string/meun_title1</item>
+		<item>@string/meun_title2</item>
+		<item>@string/meun_title3</item>
+		<item>@string/meun_title4</item>		
+	</string-array>
+	
+	<integer-array name="menu_options_index_array">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</integer-array>
+	
+   <string-array name="list_show_array">
+		<item>@string/song_list</item>
+		<item>@string/album_list</item>
+		<item>@string/artist_list</item>
+		<item>@string/playlist_list</item>
+		<item>@string/musiconline_list</item>		
+	</string-array>
+</resources>

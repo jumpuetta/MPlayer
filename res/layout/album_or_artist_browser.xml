@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EFEFEF"
+        >
+        <ImageButton 
+           android:id="@+id/track_play_back"
+           style="@style/PlayerBarButtonBack"
+           />
+        <TextView
+         android:id="@+id/track_play_title"
+         style="@style/ShadowedText"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:textColor="@color/black"
+         android:textSize="18sp"
+         />
+      </LinearLayout>
+      
+     <FrameLayout 
+	    android:id="@+id/colorstrip_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/colorstrip_height"
+        android:background="@color/holo_blue_dark" />
+     
+    <include
+        android:id="@+id/half"
+        layout="@layout/half_and_half" />
+    
+    <ListView
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:layout_below="@id/half" 
+        android:windowContentOverlay="@null"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/colorstrip_height"
+        android:background="@color/holo_blue_dark" />
+      <include layout="@layout/music_play_mini_controll"/>
+    </LinearLayout>
+
+</LinearLayout>

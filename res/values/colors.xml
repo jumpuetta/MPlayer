@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="md__transparent">#00000000</color>
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#aa000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="presscolor">#787878</color>
+    <color name="black">#ff000000</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+</resources>

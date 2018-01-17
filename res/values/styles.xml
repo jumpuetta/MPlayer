@@ -1,0 +1,145 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- menudrawer -->
+    
+       <style name="MenuDrawer" />
+
+      <style name="MenuDrawer.Widget" />
+      
+
+      <style name="MenuDrawer.Widget.Title">
+        <item name="android:background">@drawable/md_list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <!-- <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">32dp</item> -->
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+       </style>
+       
+    <style name="MenuDrawerStyle.Bottom" parent="Widget.MenuDrawer">
+        <item name="mdActiveIndicator">@drawable/menu_arrow_bottom</item>
+        <item name="mdMenuSize">64dp</item>
+    </style>
+     <style name="SampleBase" parent="@android:style/Theme.Light" />
+    <style name="SampleTheme.BottomDrawer" parent="SampleBase">
+        <item name="menuDrawerStyle">@style/MenuDrawerStyle.Bottom</item>
+        <item name="android:windowNoTitle">true</item>
+    </style> 
+   
+    <style name="PeakMeter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    
+    <style name="AudioPlayerButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_holo_lrc_item</item>
+    </style>
+    
+    <style name="PlayerBarButtonBack">
+         <item name="android:layout_width">40dip</item>
+         <item name="android:layout_height">37dip</item>
+         <item name="android:layout_alignParentLeft">true</item>
+         <item name="android:background">@drawable/selector_bar_button</item>
+    </style>
+    
+    <style name="AudioPlayerText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="ShadowedText" parent="AudioPlayerText">        
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">1.5</item> 
+    </style>
+    
+    <style name="BottomActionBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_extra_micro</item>
+       <!--  <item name="android:textAllCaps">true</item> -->
+    </style>
+    
+    <style name="Topborderline"> 
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">2dp</item>
+	    <item name="android:background">@color/black</item>
+    </style>
+    
+    <style name="GridViewTextItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    
+    <style name="GridviewShadowedText" parent="GridViewTextItem">        
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">1.5</item> 
+    </style>
+    
+   <style name="Theme.ListPageIndicator" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+        <item name="android:textColor">#232323</item>
+        <item name="android:textSize">30sp</item>
+    </style>    
+    
+   <style name="StatusBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+   <style name="StatusBarButton">
+        <item name="android:layout_width">@dimen/status_bar_button_width_height</item>
+        <item name="android:layout_height">@dimen/status_bar_button_width_height</item>
+        <item name="android:layout_gravity">center|right</item>
+        <item name="android:background">?android:listChoiceBackgroundIndicator</item>
+    </style>
+</resources>

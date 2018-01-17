@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/audio_player_track_text"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="@dimen/audio_player_info_container_padding"
+    android:paddingRight="@dimen/audio_player_info_container_padding"
+    android:paddingTop="@dimen/audio_player_artwork_padding"
+    android:paddingBottom="@dimen/audio_player_artwork_padding"
+    android:layout_alignParentBottom="true" 
+    android:background="#000000"  >
+    	
+	<com.android.mplayer.view.ProgressBarView
+		android:id="@+id/progress_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		/>
+		
+	 <TextView
+         android:id="@+id/audio_player_music_name"
+         style="@style/ShadowedText"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_large"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/audio_player_album_artist"
+         style="@style/ShadowedText"
+         android:layout_below="@+id/audio_player_music_name"
+         android:textColor="@color/white"
+         android:textSize="@dimen/text_size_small" />
+
+</RelativeLayout>

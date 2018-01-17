@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout
+             xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fl_ablumlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_music_ablum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_ablumlayout_0"
+                android:layout_gravity="center"/>
+            
+            <!-- <TextView
+               android:id="@+id/lrc_mini_show"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:gravity="center"
+               android:background="#99000000"
+               android:textSize="35sp"
+               android:visibility="visible"
+                /> -->
+            
+        </RelativeLayout>
+
+

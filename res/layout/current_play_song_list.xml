@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EFEFEF"
+        >
+        <ImageButton 
+           android:id="@+id/bt_current_to_play"
+           style="@style/PlayerBarButtonBack"
+            />
+        <TextView 
+           android:id="@+id/tv_current_title"
+           android:layout_width="fill_parent"
+           android:layout_height="20dp"
+           android:textSize="16sp"
+           android:gravity="left"
+           android:layout_marginTop="8dp"
+            /> 
+    </LinearLayout>
+    
+    <FrameLayout 
+	    android:id="@+id/colorstrip_bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/colorstrip_height"
+        android:background="@color/holo_blue_dark" />
+    
+    <include layout="@layout/shadow" />
+    <ListView
+        android:id="@+id/current_playlist_list"
+	    android:divider="#ABABAB"
+	    android:layout_weight="10"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:drawSelectorOnTop="true"
+        android:numColumns="@integer/gridview_columns"
+        android:scrollbars="none" />
+	
+</LinearLayout> 
+
+
+
